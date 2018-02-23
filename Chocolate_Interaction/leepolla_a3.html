@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 11px sans-serif;
+}
+
+.axis line,
+.axis text {
+  font: 11px sans-serif;
+}
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+</style>
+<body>
+<!-- <link href="style.css" rel="stylesheet"> -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<p>This is my chocolate explorer. Use the dropdowns to create groups of chocolates to compare. Try hovering over a scatter point to link it to the breakdown of specific info on the right. Try hovering over they pie chart to see a count of how many chocolates are in the sub group.</p>
+<div id="layout">
+  <div id="controls">
+		<input type="text" id="mytype" readonly style="border:0; color:#f6931f; font-weight:bold;">
+		<br>
+	</div>
+	<div id="title">
+		<p>Chocolate Scatterplot </p>
+	</div>
+	<div id="visualization">
+		<svg class="chart"></svg>
+		<script src="leepolla_a3.js"></script>
+  </div>
+</div>
+
+
+</body>
+</html>
+
